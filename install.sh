@@ -14,5 +14,5 @@ systemctl enable containerd
 systemctl start containerd
 
 #zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" < y
 cp .zshrc ~/.zshrc
