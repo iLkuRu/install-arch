@@ -5,8 +5,8 @@ pacman -Syyu openssh git docker zsh zsh-completions curl --noconfirm
 #SSH
 systemctl enable sshd
 systemctl start sshd
-ssh-keygen -t rsa -N '' -f ~/.ssh/id_rsa <<< y &&\
-cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys &&\
+ssh-keygen -t rsa -N '' -f ~/.ssh/id_rsa <<< y
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 #docker
 systemctl enable docker
 systemctl start docker
