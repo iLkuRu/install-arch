@@ -1,6 +1,6 @@
 #!/bin/bash
 #update&install
-pacman -Syyu openssh git docker zsh zsh-completions curl netctl --noconfirm
+pacman -Syyu openssh git docker zsh zsh-completions curl systemd-resolvconf netctl --noconfirm
 echo "%wheel ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 #SSH
 systemctl enable sshd
