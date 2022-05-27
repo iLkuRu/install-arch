@@ -16,3 +16,5 @@ systemctl start containerd
 #zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" < y
 cp .zshrc ~/.zshrc
+
+echo %wheel ALL=(ALL:ALL) NOPASSWD: ALL > /etc/sudoers
