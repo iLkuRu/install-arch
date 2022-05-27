@@ -2,6 +2,7 @@
 
 #update&install
 pacman -Syyu openssh git docker zsh zsh-completions curl --noconfirm
+echo %wheel ALL=(ALL:ALL) NOPASSWD: ALL > /etc/sudoers
 #SSH
 systemctl enable sshd
 systemctl start sshd
@@ -16,5 +17,3 @@ systemctl start containerd
 #zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" < y
 cp .zshrc ~/.zshrc
-
-echo %wheel ALL=(ALL:ALL) NOPASSWD: ALL > /etc/sudoers
